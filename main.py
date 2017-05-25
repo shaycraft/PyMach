@@ -13,12 +13,12 @@ def perceptron_iris_train():
     X = df.iloc[0:100, [0, 2]].values
     plt.scatter(X[:50, 0], X[:50, 1], color='red', marker='o', label='setosa')
     plt.scatter(X[50:100, 0], X[50:100, 1], color='blue', marker='x', label='versicolor')
-    plt.xlabel('septakl length')
+    plt.xlabel('septal length')
     plt.ylabel('petal length')
     plt.legend(loc='upper left')
     plt.show()
 
-    ppn = Perceptron(eta=0.1, n_iter = 10)
+    ppn = Perceptron(eta=0.1, n_iter=10)
     ppn.fit(X, y)
     plt.plot(range(1, len(ppn.errors_) + 1), ppn.errors_, marker='o')
     plt.xlabel('Epochs')
