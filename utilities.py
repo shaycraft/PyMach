@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 
 
-def plot_decision_regions(X, y, classifier, resolution=0.2):
+def plot_decision_regions(X, y, classifier, resolution=0.02):
     # setup marker generator and color map
     markers = ('s', 'x', 'o', '^', 'v')
     colors = ('red', 'blue', 'lightgreen', 'gray', 'cyan')
